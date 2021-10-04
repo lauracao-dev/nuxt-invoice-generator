@@ -886,6 +886,7 @@ export default {
     },
 
     createNew() {
+      this.editUrl = null
       this.$router.push("/document");
       this.form = { ...this.$store.state.sampleInvoice }
     },

@@ -83,7 +83,7 @@ export default {
     extendRoutes(routes, resolve) {
       routes.push({
         path: '',
-        component: resolve(__dirname, 'layouts/default.vue'),
+        component: resolve(__dirname, 'pages/document/_id.vue'),
         children: [{ path: '/document-view/:id', component: resolve(__dirname, 'pages/document/_id.vue'), name: 'document-view', }]
       })
     }
